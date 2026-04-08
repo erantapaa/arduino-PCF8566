@@ -95,7 +95,7 @@ single device limitation seems unavoidable when using the VW lcd module with ard
 
 #define PCF_CMD_SELECT_BANK ((1 << 6) | (1 << 5) | (1 << 4) | (1 << 3) | (1 << 1))
 
-#define PCF_CMD_LOAD_DATA_POINTER(dp) (0x60 | (dp & 0x1f))
+#define PCF_CMD_LOAD_DATA_POINTER(dp) (dp & 0x1f)
 
 class PCF8566 {
   public:
